@@ -19,4 +19,34 @@ body {
   margin-left: 8%;
   margin-right: 8%;
   padding: 18px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: space-around;
+}
+
+.section-links {
+  display: flex;
+  gap: 70px;
+}
+
+.section-links a {
+  color: #9c9c9c;
+  text-decoration: none;
+}
+
+.social-links {
+  width: 6.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.bio {
+  color: #ffffff;
 }
