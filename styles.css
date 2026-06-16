@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   padding: 0;
@@ -8,12 +9,13 @@
 
 body {
   background-color: #080808;
+  font-family: "IBM Plex Mono", monospace;
+  color: #ffffff;
 }
 
 .navbar {
   background-color: #1b1b1b;
   color: #9c9c9c;
-  font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
   font-style: normal;
   margin-left: 8%;
@@ -40,6 +42,8 @@ body {
   width: 6.5%;
   display: flex;
   justify-content: space-between;
+  gap: 25px;
+  opacity: 30%;
 }
 
 .social-links a {
@@ -47,6 +51,81 @@ body {
   text-decoration: none;
 }
 
+.hero {
+  justify-content: space-evenly;
+}
+
+.bio-portrait {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  padding-left: 14%;
+  padding-right: 14%;
+  padding-top: 80px;
+}
+
 .bio {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bio .name-blurb {
+}
+.bio h1 {
   color: #ffffff;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.bio p {
+  color: #9c9c9c;
+}
+
+.bio-button {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: bold;
+  background-color: #3f8e00;
+  border-color: #62ba1b;
+  border-radius: 4px;
+  border-width: 1px;
+  padding: 21px 64px 21px 64px;
+  font-style: none;
+  filter: drop-shadow(0px 8px 30px #3f8e0080);
+  width: fit-content;
+}
+
+.portrait {
+}
+
+.worked-with {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 14%;
+}
+
+.logo-button img {
+  width: 80px;
+  height: auto;
+}
+
+.logo-button {
+  border-width: 1px;
+  border-color: white;
+  border-radius: 6px;
+  padding: 20px 40px 20px 40px;
+  opacity: 30%;
+}
+
+.cases {
+  background-color: #ffffff;
+  color: #080808;
+}
+
+.cases p {
+  color: #9c9c9c;
 }
