@@ -73,6 +73,7 @@ body {
 
 .bio .name-blurb {
 }
+
 .bio h1 {
   color: #ffffff;
   padding-bottom: 10px;
@@ -89,9 +90,8 @@ body {
   font-weight: 700;
   font-style: bold;
   background-color: #3f8e00;
-  border-color: #62ba1b;
+  border: 1px solid #62ba1b;
   border-radius: 4px;
-  border-width: 1px;
   padding: 21px 64px 21px 64px;
   font-style: none;
   filter: drop-shadow(0px 8px 30px #3f8e0080);
@@ -108,24 +108,43 @@ body {
   padding-left: 14%;
 }
 
+.logo-cards {
+  display: flex;
+  padding: 20px;
+}
+
 .logo-button img {
-  width: 80px;
+  width: 100px;
   height: auto;
+  object-fit: cover;
 }
 
 .logo-button {
-  border-width: 1px;
-  border-color: white;
+  border: 2px solid #ffffff80;
   border-radius: 6px;
   padding: 20px 40px 20px 40px;
   opacity: 30%;
+  overflow: hidden;
+}
+
+.header-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .cases {
   background-color: #ffffff;
   color: #080808;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 .cases p {
   color: #9c9c9c;
+  max-width: 45%;
 }
