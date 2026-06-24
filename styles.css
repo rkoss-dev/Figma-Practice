@@ -71,9 +71,6 @@ body {
   gap: 10px;
 }
 
-.bio .name-blurb {
-}
-
 .bio h1 {
   color: #ffffff;
   padding-bottom: 10px;
@@ -96,9 +93,6 @@ body {
   font-style: none;
   filter: drop-shadow(0px 8px 30px #3f8e0080);
   width: fit-content;
-}
-
-.portrait {
 }
 
 .worked-with {
@@ -136,15 +130,47 @@ body {
   margin-bottom: 80px;
 }
 
-.cases {
+.skills { 
   background-color: #ffffff;
   color: #080808;
   display: flex;
   flex-direction: column;
   gap: 80px;
+  align-items: center;
 }
 
-.cases p {
+.skill-button {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: bold;
+  background-color: #3f8e00;
+  border: 1px solid #62ba1b;
+  border-radius: 4px;
+  padding: 21px 64px 21px 64px;
+  font-style: none;
+  filter: drop-shadow(0px 8px 30px #3f8e0080);
+  width: fit-content;
+}
+
+.skills p {
   color: #9c9c9c;
   max-width: 45%;
+}
+
+.skills .skill {
+  display: flex;
+  max-width: 90%;
+  align-items: center;
+}
+
+.skills .skill .skill-blurb {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.skills .skill .skill-image {
+  flex: 1;
 }
