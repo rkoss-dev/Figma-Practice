@@ -104,6 +104,7 @@ body {
 
 .logo-cards {
   display: flex;
+  gap: 20px;
   padding: 20px;
 }
 
@@ -136,6 +137,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 80px;
+  padding-bottom: 80px;
 }
 
 .skill-button {
@@ -168,14 +170,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  flex: 1;
 }
 
-.skills .skill .skill-image {
-  flex: 1;
-}
-
-.testimonials{
+.testimonials {
   background-color: #080808;
   color: #ffffff;
+}
+
+.recent {
+  background-color: #ffffff;
+  color: #080808;
 }
