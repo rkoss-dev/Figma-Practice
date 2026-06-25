@@ -39,7 +39,7 @@ body {
 }
 
 .social-links {
-  width: 6.5%;
+  width: 8%;
   display: flex;
   justify-content: space-between;
   gap: 25px;
@@ -130,13 +130,12 @@ body {
   margin-bottom: 80px;
 }
 
-.skills { 
+.skills {
   background-color: #ffffff;
   color: #080808;
   display: flex;
   flex-direction: column;
   gap: 80px;
-  align-items: center;
 }
 
 .skill-button {
@@ -159,9 +158,10 @@ body {
 }
 
 .skills .skill {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   max-width: 90%;
-  align-items: center;
+  margin: 0 auto;
 }
 
 .skills .skill .skill-blurb {
@@ -173,4 +173,9 @@ body {
 
 .skills .skill .skill-image {
   flex: 1;
+}
+
+.testimonials{
+  background-color: #080808;
+  color: #ffffff;
 }
