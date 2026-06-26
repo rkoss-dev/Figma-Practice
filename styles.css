@@ -140,7 +140,7 @@ body {
   padding-bottom: 80px;
 }
 
-.skill-button {
+.project-button {
   color: white;
   text-decoration: none;
   font-weight: 700;
@@ -180,6 +180,57 @@ body {
 .recent {
   background-color: #ffffff;
   color: #080808;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.card-gallery {
+  display: flex;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.card-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.project-card {
+  flex: 0 0 calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.card-description {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-description h3 {
+  margin: 0 0 10px 0;
+}
+
+.card-description p {
+  margin: 0 0 15px 0;
+  flex-grow: 1;
 }
 
 .form-group {
@@ -228,4 +279,10 @@ textarea {
   text-align: center;
   background-color: #1b1b1b;
   padding: 26px;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex: 0 0 100%; 
+  }
 }
