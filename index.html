@@ -160,11 +160,44 @@
       <div class="header-card">
         <h2>Get In Touch</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-          blanditiis maxime deleniti ad libero aliquam, dicta quod labore
-          obcaecati repudiandae.
+          If you would like to get in touch with me then please leave an email,
+          phone number, and a brief message about your inquiry and I will be
+          sure to get back to you.
         </p>
       </div>
+      <form action="/action_page.php" id="inquire">
+        <div class="form-group">
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Please enter your email"
+          /><br />
+        </div>
+        <div class="form-group">
+          <label for="mobile">Mobile</label><br />
+          <input
+            type="tel"
+            id="mobile"
+            name="mobile"
+            placeholder="Enter mobile"
+          /><br />
+        </div>
+        <div class="form-group">
+          <label for="inquiry">Message</label><br /><textarea
+            id="inquiry"
+            name="inquiry"
+            rows="4"
+            cols="50"
+            placeholder="Type your message here..."
+          ></textarea
+          ><br />
+        </div>
+
+        <input type="submit" value="Submit" />
+      </form>
     </section>
+    <div class="love"><p>Made with ❤️</p></div>
   </body>
 </html>
