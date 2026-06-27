@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   padding: 0;
@@ -16,8 +15,6 @@ body {
 .navbar {
   background-color: #1b1b1b;
   color: #9c9c9c;
-  font-weight: 400;
-  font-style: normal;
   margin-left: 8%;
   margin-right: 8%;
   padding: 18px;
@@ -36,6 +33,12 @@ body {
 .section-links a {
   color: #9c9c9c;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.section-links a:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .social-links {
@@ -46,13 +49,17 @@ body {
   opacity: 30%;
 }
 
-.social-links a {
+.fa-brands {
   color: #ffffff;
   text-decoration: none;
+  font-size: x-large;
+  transition: all 0.3s ease-in-out;
 }
 
-.hero {
-  justify-content: space-evenly;
+.fa-brands:hover {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: large;
 }
 
 .bio-portrait {
@@ -62,7 +69,7 @@ body {
   gap: 30px;
   padding-left: 14%;
   padding-right: 14%;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .bio {
@@ -72,7 +79,6 @@ body {
 }
 
 .bio h1 {
-  color: #ffffff;
   padding-bottom: 10px;
   padding-top: 10px;
 }
@@ -81,18 +87,28 @@ body {
   color: #9c9c9c;
 }
 
-.bio-button {
+.bio-button,
+.project-button {
   color: white;
   text-decoration: none;
   font-weight: 700;
-  font-style: bold;
   background-color: #3f8e00;
   border: 1px solid #62ba1b;
   border-radius: 4px;
-  padding: 21px 64px 21px 64px;
-  font-style: none;
+  padding: 21px 64px;
   filter: drop-shadow(0px 8px 30px #3f8e0080);
   width: fit-content;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.bio-button:hover,
+.project-button:hover {
+  background-color: #2e6900; /* Slightly darker green */
+  border-color: #80e82a; /* Brighter border to pop */
+  transform: translateY(-3px); /* Lifts the button up 3 pixels */
+  filter: drop-shadow(0px 12px 40px #3f8e00); /* Stronger, brighter glow */
+  cursor: pointer;
 }
 
 .worked-with {
@@ -100,6 +116,7 @@ body {
   flex-direction: column;
   gap: 10px;
   padding-left: 14%;
+  padding-bottom: 40px;
 }
 
 .logo-cards {
@@ -117,9 +134,19 @@ body {
 .logo-button {
   border: 2px solid #ffffff80;
   border-radius: 6px;
-  padding: 20px 40px 20px 40px;
+  padding: 20px 40px;
   opacity: 30%;
   overflow: hidden;
+
+  transition:
+    opacity 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.logo-button:hover {
+  opacity: 100%; /* Lights up the logo */
+  border-color: #ffffff; /* Brightens the border */
+  cursor: pointer;
 }
 
 .header-card {
@@ -127,8 +154,9 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  max-width: 60%;
+  padding: 40px;
+  margin: 0 auto;
 }
 
 .skills {
@@ -136,34 +164,19 @@ body {
   color: #080808;
   display: flex;
   flex-direction: column;
-  gap: 80px;
-  padding-bottom: 80px;
-}
-
-.project-button {
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-  font-style: bold;
-  background-color: #3f8e00;
-  border: 1px solid #62ba1b;
-  border-radius: 4px;
-  padding: 21px 64px 21px 64px;
-  font-style: none;
-  filter: drop-shadow(0px 8px 30px #3f8e0080);
-  width: fit-content;
+  gap: 40px;
 }
 
 .skills p {
   color: #9c9c9c;
-  max-width: 45%;
 }
 
 .skills .skill {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
+  padding: 40px 0;
 }
 
 .skills .skill .skill-blurb {
@@ -172,16 +185,20 @@ body {
   gap: 10px;
 }
 
-.testimonials {
-  background-color: #080808;
-  color: #ffffff;
+.bold-quote {
+  font-family: "Garamond", serif;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.testimonials .clients .client-badge img {
+  width: 50px;
+  border-radius: 50%;
 }
 
 .recent {
   background-color: #ffffff;
   color: #080808;
-  padding-top: 80px;
-  padding-bottom: 80px;
 }
 
 .card-gallery {
@@ -190,6 +207,7 @@ body {
   max-width: 80%;
   margin: 0 auto;
   gap: 20px;
+  padding-bottom: 40px;
 }
 
 .card-wrapper {
@@ -208,13 +226,24 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  border-radius: 8px;
+  background-color: #ffffff;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px); /* Lifts the card up 8 pixels */
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15); /* Adds a soft shadow underneath */
+  cursor: pointer;
 }
 
 .project-card img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px;
 }
 
 .card-description {
@@ -225,12 +254,16 @@ body {
 }
 
 .card-description h3 {
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
 }
 
 .card-description p {
-  margin: 0 0 15px 0;
+  margin-bottom: 15px;
   flex-grow: 1;
+}
+
+.contact {
+  padding-bottom: 40px;
 }
 
 .form-group {
@@ -249,9 +282,6 @@ textarea {
 }
 
 #inquire textarea {
-  padding: 10px;
-  background-color: #f8f8f8;
-  border-radius: 4px;
   height: 120px;
 }
 
@@ -272,7 +302,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .love {
@@ -283,6 +313,6 @@ textarea {
 
 @media (max-width: 768px) {
   .project-card {
-    flex: 0 0 100%; 
+    flex: 0 0 100%;
   }
 }
