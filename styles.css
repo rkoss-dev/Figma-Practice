@@ -237,7 +237,6 @@ body {
 .project-card:hover {
   transform: translateY(-8px); /* Lifts the card up 8 pixels */
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15); /* Adds a soft shadow underneath */
-  cursor: pointer;
 }
 
 .project-card img {
