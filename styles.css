@@ -15,20 +15,24 @@ body {
 .navbar {
   background-color: #1b1b1b;
   color: #9c9c9c;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 5%;
+  margin-right: 5%;
   padding: 18px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   display: flex;
   flex-wrap: wrap;
-  place-content: space-around;
+  justify-content: space-evenly;
+}
+
+.navbar .icon {
+  display: none;
 }
 
 .section-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 70px;
+  gap: 40px;
 }
 
 .section-links a {
@@ -43,15 +47,19 @@ body {
 }
 
 .social-links {
-  width: 8%;
   display: flex;
-  justify-content: space-between;
-  gap: 25px;
+  gap: 20px;
   opacity: 30%;
+}
+
+.fa {
+  color: #ffffff;
+  font-size: xx-large;
 }
 
 .fa-brands {
   color: #ffffff;
+  display: inline-block;
   text-decoration: none;
   font-size: x-large;
   transition: all 0.3s ease-in-out;
@@ -60,7 +68,7 @@ body {
 .fa-brands:hover {
   color: #ffffff;
   text-decoration: none;
-  font-size: large;
+  font-size: xx-large;
 }
 
 .bio-wrapper {
@@ -393,7 +401,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 30px;
     padding-left: 14%;
     padding-right: 14%;
@@ -406,5 +414,45 @@ textarea {
     max-width: 80%;
     margin: 0 auto;
     padding: 40px 0px;
+  }
+
+  .navbar a {
+    display: none;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .navbar a.icon {
+    float: right;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive {
+    position: relative;
+    flex-direction: column;
+    padding-bottom: 10px;
+    gap: 30px;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navbutton {
+    width: 100%;
+    border-bottom: solid 1px #62ba1b;
+  }
+
+  .navbutton:hover {
+    background-color: #62ba1b;
   }
 }
