@@ -75,10 +75,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: space-evenly;
+  justify-items: center;
   gap: 30px;
-  padding-left: 14%;
-  padding-right: 14%;
+  max-width: 90%;
+  margin: 0 auto;
   padding-top: 40px;
 }
 
@@ -193,14 +193,26 @@ body {
 .skills .skill {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
   padding: 40px 0px;
+  gap: 20px;
+}
+
+.skills .skill .skill-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills .skill .skill-image img {
+  width: 100%;
 }
 
 .skills .skill .skill-blurb {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -277,7 +289,7 @@ body {
 .card-gallery {
   display: flex;
   align-items: center;
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
   gap: 20px;
   padding-bottom: 40px;
@@ -399,7 +411,7 @@ textarea {
 
   .bio-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: center;
     gap: 30px;
